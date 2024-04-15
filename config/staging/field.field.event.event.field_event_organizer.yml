@@ -1,0 +1,20 @@
+uuid: dea43f56-673b-4b7d-9802-54c3c7e0bfd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.event.field_event_organizer
+  module:
+    - event
+id: event.event.field_event_organizer
+field_name: field_event_organizer
+entity_type: event
+bundle: event
+label: Organizer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

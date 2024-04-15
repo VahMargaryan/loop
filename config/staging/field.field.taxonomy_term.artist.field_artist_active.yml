@@ -1,0 +1,21 @@
+uuid: a10a15a2-d376-47f2-b2f9-8e01516f5039
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_artist_active
+    - taxonomy.vocabulary.artist
+  module:
+    - options
+id: taxonomy_term.artist.field_artist_active
+field_name: field_artist_active
+entity_type: taxonomy_term
+bundle: artist
+label: Active
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

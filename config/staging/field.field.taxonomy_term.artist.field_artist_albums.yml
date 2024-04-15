@@ -1,0 +1,23 @@
+uuid: fab582f5-e668-4609-b856-d6ee12a61930
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_artist_albums
+    - taxonomy.vocabulary.artist
+id: taxonomy_term.artist.field_artist_albums
+field_name: field_artist_albums
+entity_type: taxonomy_term
+bundle: artist
+label: Albums
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

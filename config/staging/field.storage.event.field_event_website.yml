@@ -1,0 +1,19 @@
+uuid: 5d345ee7-dba1-4f91-918b-30e16e7eb604
+langcode: en
+status: true
+dependencies:
+  module:
+    - event
+    - link
+id: event.field_event_website
+field_name: field_event_website
+entity_type: event
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

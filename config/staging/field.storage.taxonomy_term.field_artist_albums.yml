@@ -1,0 +1,20 @@
+uuid: 360ef8f7-7d07-49e1-9572-e1196cd0966d
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_artist_albums
+field_name: field_artist_albums
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

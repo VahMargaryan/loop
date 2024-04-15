@@ -1,0 +1,19 @@
+uuid: 530d8a17-63da-40f7-965c-81180ba9c357
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_artist_genre
+    - taxonomy.vocabulary.artist
+id: taxonomy_term.artist.field_artist_genre
+field_name: field_artist_genre
+entity_type: taxonomy_term
+bundle: artist
+label: Genre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

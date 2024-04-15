@@ -1,0 +1,5 @@
+name: 'Event'
+type: module
+description: 'Loop event module'
+package: 'Loop'
+core_version_requirement: ^10

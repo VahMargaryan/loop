@@ -1,0 +1,59 @@
+uuid: 6466cca1-0441-4a4b-8e3a-92f2eb07b8de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.artist.field_artist_active
+    - field.field.taxonomy_term.artist.field_artist_albums
+    - field.field.taxonomy_term.artist.field_artist_genre
+    - field.field.taxonomy_term.artist.field_artist_nationality
+    - taxonomy.vocabulary.artist
+  module:
+    - options
+    - text
+id: taxonomy_term.artist.default
+targetEntityType: taxonomy_term
+bundle: artist
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_artist_active:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_artist_albums:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_artist_genre:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_artist_nationality:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

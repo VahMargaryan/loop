@@ -1,0 +1,11 @@
+entity.event.settings:
+  title: 'Event'
+  description: 'Configure an Event entity type.'
+  route_name:  entity.event.settings
+  parent: system.admin_structure
+
+entity.event.collection:
+  title: 'Events'
+  description: 'List of events.'
+  route_name: entity.event.collection
+  parent: system.admin_content

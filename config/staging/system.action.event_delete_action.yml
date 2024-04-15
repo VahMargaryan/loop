@@ -1,0 +1,13 @@
+uuid: 5c549e20-b45c-4af4-9b0f-858149cfe837
+langcode: en
+status: true
+dependencies:
+  module:
+    - event
+_core:
+  default_config_hash: NlmFacxqA87uXkgKRGe4nnRT8z5qnY4bUj_CdCdp0kc
+id: event_delete_action
+label: 'Delete events'
+type: event
+plugin: 'entity:delete_action:event'
+configuration: {  }

@@ -1,0 +1,13 @@
+uuid: b119fc99-6203-4058-b60e-fa1d3cb9f1f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - event
+_core:
+  default_config_hash: 8qj1CFh_L5xKKL5u4accMwLKDjonMyvGxcZgP-b4U78
+id: event_save_action
+label: 'Save events'
+type: event
+plugin: 'entity:save_action:event'
+configuration: {  }

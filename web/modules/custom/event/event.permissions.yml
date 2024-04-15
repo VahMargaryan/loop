@@ -1,0 +1,3 @@
+administer events:
+  title: 'Administer events'
+  restrict access: true

@@ -1,0 +1,20 @@
+uuid: ed10fe3c-81e5-4f21-bdae-e740da39446f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.event.field_event_location
+  module:
+    - event
+id: event.event.field_event_location
+field_name: field_event_location
+entity_type: event
+bundle: event
+label: Location
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

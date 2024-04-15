@@ -1,0 +1,97 @@
+uuid: 379e7053-b55d-4f22-a556-d07a7b722d55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.event.event.field_event_date
+    - field.field.event.event.field_event_description
+    - field.field.event.event.field_event_image
+    - field.field.event.event.field_event_location
+    - field.field.event.event.field_event_organizer
+    - field.field.event.event.field_event_website
+  module:
+    - datetime
+    - event
+    - image
+    - link
+    - taxonomy
+    - text
+id: event.event.default
+targetEntityType: event
+bundle: event
+mode: default
+content:
+  artists:
+    type: entity_reference_rss_category
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_event_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_event_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_event_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_event_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_event_organizer:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_event_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

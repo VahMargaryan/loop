@@ -1,0 +1,7 @@
+entity.event.settings:
+  path: 'admin/structure/event'
+  defaults:
+    _form: '\Drupal\event\Form\EventSettingsForm'
+    _title: 'Event'
+  requirements:
+    _permission: 'administer events'
