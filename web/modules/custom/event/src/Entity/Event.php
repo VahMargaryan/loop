@@ -148,38 +148,38 @@ class Event extends ContentEntityBase implements EventInterface {
       ->setLabel(t('Changed'))
       ->setDescription(t('The time that the event was last edited.'));
 
-    // Adding a new multi-value entity reference field for active artists
-    $fields['artists'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Artists'))
-      ->setDescription(t('Active artists in the event. If you want to see the artist here, please set the artist to active on the artist taxonomy page.'))
-      ->setRequired(TRUE)
-      ->setTranslatable(TRUE)
-      ->setSetting('target_type', 'taxonomy_term')
-      ->setSetting('handler', 'views')
-      ->setDisplayOptions('view', [
-        'label' => 'hidden',
-        'type' => 'string',
-        'weight' => 0,
-      ])
-      ->setDisplayOptions('form', [
-        'type' => 'entity_reference_autocomplete',
-        'weight' => 5,
-        'settings' => [
-          'match_operator' => 'CONTAINS',
-          'size' => '60',
-          'autocomplete_type' => 'tags',
-          'placeholder' => '',
-        ],
-      ])
-      ->setSetting('handler_settings', [
-        'view' => [
-          'view_name' => 'active_artists',
-          'display_name' => 'entity_reference_1',
-          'arguments' => [],
-        ],
-      ])->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
+//    // Adding a new multi-value entity reference field for active artists
+//    $fields['artists'] = BaseFieldDefinition::create('entity_reference')
+//      ->setLabel(t('Artists'))
+//      ->setDescription(t('Active artists in the event. If you want to see the artist here, please set the artist to active on the artist taxonomy page.'))
+//      ->setRequired(TRUE)
+//      ->setTranslatable(TRUE)
+//      ->setSetting('target_type', 'taxonomy_term')
+//      ->setSetting('handler', 'views')
+//      ->setDisplayOptions('view', [
+//        'label' => 'hidden',
+//        'type' => 'string',
+//        'weight' => 0,
+//      ])
+//      ->setDisplayOptions('form', [
+//        'type' => 'entity_reference_autocomplete',
+//        'weight' => 5,
+//        'settings' => [
+//          'match_operator' => 'CONTAINS',
+//          'size' => '60',
+//          'autocomplete_type' => 'tags',
+//          'placeholder' => '',
+//        ],
+//      ])
+//      ->setSetting('handler_settings', [
+//        'view' => [
+//          'view_name' => 'active_artists',
+//          'display_name' => 'entity_reference_1',
+//          'arguments' => [],
+//        ],
+//      ])->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
+//      ->setDisplayConfigurable('form', TRUE)
+//      ->setDisplayConfigurable('view', TRUE);
 
 
     return $fields;

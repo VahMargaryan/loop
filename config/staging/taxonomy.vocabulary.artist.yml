@@ -1,8 +1,0 @@
-uuid: cd408add-3db1-4017-a625-44c93ae48682
-langcode: en
-status: true
-dependencies: {  }
-name: Artist
-vid: artist
-description: ''
-weight: 0
