@@ -7,6 +7,7 @@ declare(strict_types=1);
  * Provides an event entity type.
  */
 
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element;
 use Drupal\user\UserInterface;
 
@@ -44,7 +45,7 @@ function event_user_cancel($edit, UserInterface $account, $method): void {
   switch ($method) {
     case 'user_cancel_block_unpublish':
       // Unpublish events.
-      $storage = \Drupal::entityTypeManager()->getStorage('event');
+      $storage = Drupal::entityTypeManager()->getStorage('event');
       $event_ids = $storage->getQuery()
         ->condition('uid', $account->id())
         ->condition('status', 1)
@@ -57,7 +58,7 @@ function event_user_cancel($edit, UserInterface $account, $method): void {
 
     case 'user_cancel_reassign':
       // Anonymize events.
-      $storage = \Drupal::entityTypeManager()->getStorage('event');
+      $storage = Drupal::entityTypeManager()->getStorage('event');
       $event_ids = $storage->getQuery()
         ->condition('uid', $account->id())
         ->accessCheck(FALSE)
@@ -74,7 +75,7 @@ function event_user_cancel($edit, UserInterface $account, $method): void {
  */
 function event_user_predelete(UserInterface $account): void {
   // Delete events that belong to this account.
-  $storage = \Drupal::entityTypeManager()->getStorage('event');
+  $storage = Drupal::entityTypeManager()->getStorage('event');
   $event_ids = $storage->getQuery()
     ->condition('uid', $account->id())
     ->accessCheck(FALSE)
@@ -85,7 +86,7 @@ function event_user_predelete(UserInterface $account): void {
 }
 
 function event_fetch_artists() {
-  $module_handler = \Drupal::service('module_handler');
+  $module_handler = Drupal::service('module_handler');
   $path = $module_handler->getModule('event')->getPath();
   $full_path = DRUPAL_ROOT . '/' . $path . '/artists.json';
   $data = file_get_contents($full_path);
@@ -101,3 +102,20 @@ function event_fetch_artists() {
   return $options;
 }
 
+/**
+ * Implements hook_form_alter().
+ */
+function event_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'event_edit_form' || $form_id == 'event_form') {
+//    $form['field_event_website_target'] = [
+//      '#type' => 'select',
+//      '#title' => t('Link Target'),
+//      '#weight' => 4,
+//      '#options' => [
+//        '_self' => t('Same window'),
+//        '_blank' => t('New window'),
+//      ],
+//      '#default_value' => '_self',
+//    ];
+  }
+}

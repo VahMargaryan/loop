@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Form controller for the event entity edit forms.
  */
-final class EventForm extends ContentEntityForm {
+class EventForm extends ContentEntityForm {
 
   /**
    * {@inheritdoc}

@@ -5,3 +5,12 @@ entity.event.settings:
     _title: 'Event'
   requirements:
     _permission: 'administer events'
+
+event.fetch_events:
+  path: '/api/events'
+  defaults:
+    _controller: '\Drupal\event\Controller\EventApiController::listEvents'
+    _title: 'Event List'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'

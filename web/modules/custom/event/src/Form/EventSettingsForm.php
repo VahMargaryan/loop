@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Configuration form for an event entity type.
  */
-final class EventSettingsForm extends FormBase {
+class EventSettingsForm extends FormBase {
 
   /**
    * {@inheritdoc}
