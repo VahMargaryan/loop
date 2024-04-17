@@ -83,3 +83,21 @@ function event_user_predelete(UserInterface $account): void {
     $storage->loadMultiple($event_ids)
   );
 }
+
+function event_fetch_artists() {
+  $module_handler = \Drupal::service('module_handler');
+  $path = $module_handler->getModule('event')->getPath();
+  $full_path = DRUPAL_ROOT . '/' . $path . '/artists.json';
+  $data = file_get_contents($full_path);
+  $json_data = json_decode($data, TRUE);
+
+  $options = [];
+  if (is_array($json_data)) {
+    foreach ($json_data as $key => $value) {
+      $options[$key] = $value['name'];
+    }
+  }
+
+  return $options;
+}
+

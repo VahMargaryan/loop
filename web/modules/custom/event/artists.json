@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Michael Jackson",
+    "genre": "Pop",
+    "nationality": "American",
+    "albums": 10,
+    "active": false
+  },
+  {
+    "id": 2,
+    "name": "The Beatles",
+    "genre": "Rock",
+    "nationality": "British",
+    "albums": 12,
+    "active": false
+  },
+  {
+    "id": 3,
+    "name": "Madonna",
+    "genre": "Pop",
+    "nationality": "American",
+    "albums": 14,
+    "active": true
+  },
+  {
+    "id": 4,
+    "name": "Elvis Presley",
+    "genre": "Rock and Roll",
+    "nationality": "American",
+    "albums": 23,
+    "active": false
+  },
+  {
+    "id": 5,
+    "name": "Beyoncé",
+    "genre": "R&B",
+    "nationality": "American",
+    "albums": 6,
+    "active": true
+  },
+  {
+    "id": 6,
+    "name": "Queen",
+    "genre": "Rock",
+    "nationality": "British",
+    "albums": 15,
+    "active": false
+  },
+  {
+    "id": 7,
+    "name": "Bob Dylan",
+    "genre": "Folk",
+    "nationality": "American",
+    "albums": 39,
+    "active": true
+  },
+  {
+    "id": 8,
+    "name": "David Bowie",
+    "genre": "Rock",
+    "nationality": "British",
+    "albums": 27,
+    "active": false
+  },
+  {
+    "id": 9,
+    "name": "Rihanna",
+    "genre": "R&B",
+    "nationality": "Barbadian",
+    "albums": 8,
+    "active": true
+  },
+  {
+    "id": 10,
+    "name": "Prince",
+    "genre": "Pop",
+    "nationality": "American",
+    "albums": 39,
+    "active": false
+  },
+  {
+    "id": 11,
+    "name": "Eminem",
+    "genre": "Hip Hop",
+    "nationality": "American",
+    "albums": 11,
+    "active": true
+  },
+  {
+    "id": 12,
+    "name": "Pink Floyd",
+    "genre": "Progressive Rock",
+    "nationality": "British",
+    "albums": 15,
+    "active": false
+  },
+  {
+    "id": 13,
+    "name": "Adele",
+    "genre": "Pop",
+    "nationality": "British",
+    "albums": 3,
+    "active": true
+  },
+  {
+    "id": 14,
+    "name": "Led Zeppelin",
+    "genre": "Rock",
+    "nationality": "British",
+    "albums": 9,
+    "active": false
+  },
+  {
+    "id": 15,
+    "name": "Taylor Swift",
+    "genre": "Pop",
+    "nationality": "American",
+    "albums": 10,
+    "active": true
+  },
+  {
+    "id": 16,
+    "name": "Metallica",
+    "genre": "Heavy Metal",
+    "nationality": "American",
+    "albums": 10,
+    "active": true
+  },
+  {
+    "id": 17,
+    "name": "Johnny Cash",
+    "genre": "Country",
+    "nationality": "American",
+    "albums": 96,
+    "active": false
+  },
+  {
+    "id": 18,
+    "name": "Nirvana",
+    "genre": "Grunge",
+    "nationality": "American",
+    "albums": 3,
+    "active": false
+  },
+  {
+    "id": 19,
+    "name": "Whitney Houston",
+    "genre": "R&B",
+    "nationality": "American",
+    "albums": 7,
+    "active": false
+  },
+  {
+    "id": 20,
+    "name": "The Rolling Stones",
+    "genre": "Rock",
+    "nationality": "British",
+    "albums": 30,
+    "active": true
+  }
+]
