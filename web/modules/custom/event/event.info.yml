@@ -3,6 +3,3 @@ type: module
 description: 'Loop event module'
 package: 'Loop'
 core_version_requirement: ^10
-dependencies:
-  - drupal:rest
-  - drupal:serialization
