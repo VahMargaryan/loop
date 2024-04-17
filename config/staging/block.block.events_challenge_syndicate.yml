@@ -1,0 +1,23 @@
+uuid: cd88daf4-dbf8-43a4-8bf8-f4f800e814e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - events_challenge
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: events_challenge_syndicate
+theme: events_challenge
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 35bfff1d-f1bb-4aea-b9b1-62d8f8a45a00
+langcode: en
+status: true
+dependencies:
+  theme:
+    - events_challenge
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: events_challenge_primary_admin_actions
+theme: events_challenge
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

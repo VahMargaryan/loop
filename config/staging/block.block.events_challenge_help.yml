@@ -1,0 +1,22 @@
+uuid: 787036ed-276f-4c5c-8d03-788edf7f0b1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - events_challenge
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: events_challenge_help
+theme: events_challenge
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

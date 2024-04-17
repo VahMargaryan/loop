@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function events_challenge_preprocess_page(&$variables) {
+  // Custom preprocessing
+}

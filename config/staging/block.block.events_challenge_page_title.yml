@@ -1,0 +1,20 @@
+uuid: f02bca4d-d34e-45cc-a4f2-8e2231653cb1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - events_challenge
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: events_challenge_page_title
+theme: events_challenge
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

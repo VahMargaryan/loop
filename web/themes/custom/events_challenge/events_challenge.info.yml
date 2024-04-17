@@ -1,0 +1,14 @@
+name: Events Challenge
+type: theme
+description: 'A custom theme for event management.'
+core_version_requirement: ^10
+base theme: claro
+libraries:
+  - events_challenge/global-styling
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  content: Content
+  footer: Footer

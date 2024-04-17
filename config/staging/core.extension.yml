@@ -53,4 +53,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  events_challenge: 0
 profile: standard

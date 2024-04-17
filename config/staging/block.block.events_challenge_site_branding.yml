@@ -1,0 +1,25 @@
+uuid: b5a43388-1f1d-4cf1-ace3-d1c9db9df40d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - events_challenge
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: events_challenge_site_branding
+theme: events_challenge
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
