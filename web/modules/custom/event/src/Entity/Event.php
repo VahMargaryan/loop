@@ -160,7 +160,7 @@ class Event extends ContentEntityBase implements EventInterface {
         'weight' => 20,
       ])
       ->setDisplayOptions('form', [
-        'type' => 'options_buttons',
+        'type' => 'options_select',
         'weight' => 20,
       ])
       ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
