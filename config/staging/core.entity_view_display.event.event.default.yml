@@ -22,8 +22,8 @@ bundle: event
 mode: default
 content:
   artists:
-    type: list_key
-    label: hidden
+    type: list_default
+    label: above
     settings: {  }
     third_party_settings: {  }
     weight: 2
@@ -85,7 +85,7 @@ content:
     region: content
   label:
     type: string
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
