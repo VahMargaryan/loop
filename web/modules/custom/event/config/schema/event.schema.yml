@@ -1,0 +1,10 @@
+field.widget.settings.link_target_field_widget:
+  type: field.widget.settings.link_default
+  label: 'Link with target'
+  mapping:
+    available_targets:
+      type: sequence
+      label: 'Available targets'
+      sequence:
+        type: string
+        label: 'Target'
