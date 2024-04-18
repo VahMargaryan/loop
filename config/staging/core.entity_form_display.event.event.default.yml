@@ -14,7 +14,6 @@ dependencies:
     - datetime
     - event
     - image
-    - link
     - text
 id: event.event.default
 targetEntityType: event
@@ -66,7 +65,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_event_website:
-    type: link_default
+    type: link_target_field_widget
     weight: 4
     region: content
     settings:
