@@ -54,3 +54,6 @@ Custom Theme (Optional)
 The custom theme for the Event module has been created but is not enabled by default. You can:
 
 Visit the Appearance page in your Drupal admin panel to check and enable the custom theme if desired.
+
+Username: admin 
+Password: adminpassword
